@@ -16,8 +16,6 @@ enquireScreen((b) => {
   isMobile = b;
 });
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);

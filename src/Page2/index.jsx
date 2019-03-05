@@ -23,7 +23,6 @@ const location = window.location;
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props)
     this.state = {
       isMobile,
       show: !location.port, // 如果不是 dva 2.0 请删除
