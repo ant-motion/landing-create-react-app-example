@@ -33,10 +33,10 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Header dataSource={Nav00DataSource} isMobile={this.isMobile} />
+          <Header dataSource={Nav00DataSource} isMobile={this.state.isMobile} />
           <Route exact path="/" component={Home} />
           <Route path="/abc" component={Page} />
-          <Footer dataSource={Footer00DataSource} isMobile={this.isMobile} />
+          <Footer dataSource={Footer00DataSource} isMobile={this.state.isMobile} />
         </div>
       </Router>
     );
