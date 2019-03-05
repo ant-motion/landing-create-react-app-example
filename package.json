@@ -1,0 +1,31 @@
+{
+  "name": "landing-create-react-app-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.14.1",
+    "enquire-js": "^0.2.1",
+    "rc-banner-anim": "^2.2.2",
+    "rc-queue-anim": "^1.6.12",
+    "rc-scroll-anim": "^2.5.6",
+    "rc-tween-one": "^2.3.4",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
