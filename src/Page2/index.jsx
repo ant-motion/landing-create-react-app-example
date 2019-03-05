@@ -3,19 +3,12 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-
-import Banner0 from './Banner0';
 import Content0 from './Content0';
 import Content7 from './Content7';
-import Content13 from './Content13';
-import Content12 from './Content12';
 
 import {
-  Banner00DataSource,
   Content00DataSource,
   Content70DataSource,
-  Content130DataSource,
-  Content120DataSource,
 } from './data.source.js';
 
 import './less/antMotionStyle.less';
@@ -30,6 +23,7 @@ const location = window.location;
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props)
     this.state = {
       isMobile,
       show: !location.port, // 如果不是 dva 2.0 请删除
@@ -56,12 +50,6 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Banner0
-        id="Banner0_0"
-        key="Banner0_0"
-        dataSource={Banner00DataSource}
-        isMobile={this.state.isMobile}
-      />,
       <Content0
         id="Content0_0"
         key="Content0_0"
@@ -72,18 +60,6 @@ export default class Home extends React.Component {
         id="Content7_0"
         key="Content7_0"
         dataSource={Content70DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content13
-        id="Content13_0"
-        key="Content13_0"
-        dataSource={Content130DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content12
-        id="Content12_0"
-        key="Content12_0"
-        dataSource={Content120DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
