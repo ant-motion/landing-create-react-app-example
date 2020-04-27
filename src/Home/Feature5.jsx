@@ -1,7 +1,9 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { Tabs, Icon, Row, Col } from 'antd';
+import { Tabs, Row, Col } from 'antd';
+import { Icon } from '@ant-design/compatible';
+import { getChildrenToRender } from './utils';
 
 const TabPane = Tabs.TabPane;
 
@@ -27,12 +29,12 @@ class Content7 extends React.Component {
     return (
       <TabPane
         key={i + 1}
-        tab={(
+        tab={
           <div className={tag.className}>
             <Icon type={iconChildren} className={icon.className} />
             <div {...tagText}>{tagText.children}</div>
           </div>
-        )}
+        }
         className={item.className}
       >
         <TweenOne.TweenOneGroup
@@ -75,19 +77,7 @@ class Content7 extends React.Component {
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
           <div {...dataSource.titleWrapper}>
-            {dataSource.titleWrapper.children.map((item, i) => React.createElement(
-              item.name.indexOf('title') === 0 ? 'h1' : 'div',
-              { key: i.toString(), ...item },
-              item.children.match(
-                /\.(svg|gif|jpg|jpeg|png|JPG|PNG|GIF|JPEG)$/
-              )
-                ? React.createElement('img', {
-                  src: item.children,
-                  alt: 'img',
-                })
-                : item.children
-            )
-            )}
+            {dataSource.titleWrapper.children.map(getChildrenToRender)}
           </div>
 
           <OverPack {...dataSource.OverPack}>

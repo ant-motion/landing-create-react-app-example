@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.14.1",
+    "@ant-design/compatible": "^1.0.2",
+    "antd": "^4.0.1",
     "enquire-js": "^0.2.1",
     "rc-banner-anim": "^2.2.2",
     "rc-queue-anim": "^1.6.12",
