@@ -2,6 +2,7 @@
   "name": "landing-create-react-app-example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@ant-design/compatible": "^1.0.2",
     "antd": "^4.0.1",
